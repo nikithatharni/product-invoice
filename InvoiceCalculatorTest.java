@@ -6,7 +6,7 @@ public class InvoiceCalculatorTest{
     InvoiceCalculator invoice=new InvoiceCalculator();
     @Test
     void testProductAmount(){
-        assertEquals(6000,invoice.calculateProductAmount(2500,2));
+        assertEquals(5000,invoice.calculateProductAmount(2500,2));
     }
     @Test
     void testTenPercentDiscount(){
@@ -27,5 +27,9 @@ public class InvoiceCalculatorTest{
     @Test
     void testFinalAmount(){
         assertEquals(5310,invoice.calculateFinalAmount(5000));
+    }
+     @Test
+    void intentionalFailureTest() {
+        assertEquals(1, 2);
     }
 }
