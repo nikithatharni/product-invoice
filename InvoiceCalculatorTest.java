@@ -6,7 +6,7 @@ public class InvoiceCalculatorTest{
     InvoiceCalculator invoice=new InvoiceCalculator();
     @Test
     void testProductAmount(){
-        assertEquals(6000,invoice.calculateProductAmount(2500,2));
+        assertEquals(5000,invoice.calculateProductAmount(2500,2));
     }
     @Test
     void testTenPercentDiscount(){
